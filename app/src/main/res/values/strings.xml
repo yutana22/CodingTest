@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">CodingTest</string>
+    <string name="title">Mobile Coding Test</string>
+
+    <string name="logic_test">Logic Test</string>
+    <string name="coding_test">Coding Test</string>
+    <string name="result_button">Result</string>
+    <string name="hint_input">input</string>
+    <string name="answer">Ans.</string>
+    <string name="question_one">1. Please write a function to find the index that has the sum of left’s elements equal to the sum of
+right’s elements .</string>
+    <string name="question_two">2. Please write a function to detect that incoming string is palindrome or not</string>
+</resources>

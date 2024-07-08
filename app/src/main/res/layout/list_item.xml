@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="8dp">
+
+    <ImageView
+        android:id="@+id/thumbnailImageView"
+        android:layout_width="192dp"
+        android:layout_height="144dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        app:layout_constraintDimensionRatio="H,4:3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/titleTextView"
+        style="@style/TextAppearance.MaterialComponents.Subtitle1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:padding="8dp"
+        android:text="SmartThings adds Matter support for appliances and robot vacuums"
+        android:textColor="#08A69A"
+        app:layout_constraintEnd_toStartOf="@+id/icDetailsImageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/thumbnailImageView" />
+
+    <TextView
+        android:id="@+id/descTextView"
+        style="@style/TextAppearance.MaterialComponents.Subtitle2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="The move will bring Matter-compatible robot vacuums, fridges, washing machines, air purifiers, and more to Samsung’s smart home platform."
+        android:textColor="#1F1F1F"
+        app:layout_constraintEnd_toEndOf="@+id/titleTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleTextView" />
+
+    <ImageView
+        android:id="@+id/icDetailsImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/descTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/thumbnailImageView"
+        app:srcCompat="@drawable/ic_arrow_forward" />
+
+    <TextView
+        android:id="@+id/publishedAtTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        style="@style/TextAppearance.MaterialComponents.Caption"
+        android:textColor="@color/color_publishedAt"
+        app:layout_constraintEnd_toEndOf="@+id/descTextView"
+        app:layout_constraintStart_toStartOf="@+id/descTextView"
+        app:layout_constraintTop_toBottomOf="@+id/descTextView" />
+</androidx.constraintlayout.widget.ConstraintLayout>
